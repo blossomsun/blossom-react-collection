@@ -8,7 +8,7 @@ import UserTable from "./userTable";
 import UserDialog from './addUser'
 import PasswordDialog from './resetPass'
 import { Button, Modal, Form, Input, Radio, Select,Cascader ,message } from "antd";
-require("../../styles/user.scss");
+require("assets/styles/user.scss");
 
 const FormItem = Form.Item;
 const Option = Select.Option;

@@ -1,27 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import Router from './router/index'
+// import logo from './logo.svg';
+// import React, { Component } from "react";
+// import { BrowserRouter, Switch, Route, Redirect, HashRouter, withRouter } from "react-router-dom"; // 引入需要用到的页面组件
+// import './App.css';
+// // import Router from './router/index'
+// import LoginCM from "./components/login/login"; // 登录
+// import Index from './components/index/index'
+// import PrivateRoute from './components/PrivateRoute'
 
-function App() {
-  return (
-    <Router />
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-  );
-}
 
-export default App;
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <Switch>
+//         <Route path='/login' component={LoginCM}/>
+//         <PrivateRoute path='/' component={Index}/>
+//       </Switch>
+//     )
+//   }
+// }
+
+// export default App;

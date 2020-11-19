@@ -3,7 +3,7 @@ import React from 'react';
 import { hashHistory } from 'react-router'
 import { Row, Col } from 'antd';
 import axios from 'axios'
-require('../styles/main.scss')
+require('assets/styles/main.scss')
 class MainComponent extends React.Component {
   constructor(props){
     super(props);
@@ -272,8 +272,5 @@ class MainComponent extends React.Component {
     </div>
     );
   }
-}
-MainComponent.contextTypes = {
-  // router: React.PropTypes.object
 }
 export default MainComponent

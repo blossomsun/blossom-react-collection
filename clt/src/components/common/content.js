@@ -10,7 +10,7 @@ const { SubMenu } = Menu;
 
 // const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;  
-require("../../styles/head.scss");
+require("assets/styles/head.scss");
 class ContentComponent extends Component {
   constructor(props){
     super(props);

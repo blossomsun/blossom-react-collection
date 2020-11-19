@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom'
 import axios from "axios"
 import { message,Form, Icon, Input, Button, Checkbox} from 'antd'
 import store from '../../redux/store'
-require('../../styles/login.scss')
+require('assets/styles/login.scss')
 require('../../mock/mock')
  
 const FormItem = Form.Item;
@@ -29,6 +29,7 @@ class NormalLoginForm extends React.Component {
             if(data.name === "admin" && data.password==="123456"){
                 localStorage.setItem('username',data.name)
                 store.dispatch({type:'login',username:data.name})
+                localStorage.setItem('token', data.token)
                 this.props.history.push('/index')
             }else{
                 message.error('用户或密码不正确')

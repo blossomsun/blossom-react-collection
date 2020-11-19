@@ -3,7 +3,7 @@ import { Button, Modal, Form, Input, Radio, Select,Cascader,message  } from "ant
 import axios from "axios";
 const FormItem = Form.Item;
 const Option = Select.Option;
-require("../../styles/user.scss");
+require("assets/styles/user.scss");
 const formItemLayout = {
     labelCol: { span: 6 },
     wrapperCol: { span: 16 },

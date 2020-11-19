@@ -6,6 +6,7 @@ import Mock from 'mockjs'
 Mock.mock('/users',{
     'name':'admin',
     'password':'123456',
+    'token': 'VkyHBay6AO7X5EsFHXAQ0zkr2i2u7Dbp'
 })
 Mock.mock('/homePage/getBaseData',
 {

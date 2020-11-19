@@ -15,7 +15,7 @@ import {
   Cascader,
   message
 } from "antd";
-require("../../styles/case.scss");
+require("assets/styles/case.scss");
 
 const FormItem = Form.Item;
 const Option = Select.Option;

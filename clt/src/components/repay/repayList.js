@@ -7,7 +7,7 @@ import axios from "axios";
 import SearchForm from "./searchForm";
 import CaseTable from "./repayTable";
 import { Button, Modal, Form, Input, Radio, Select,Cascader ,message } from "antd";
-require("../../styles/case.scss");
+import 'assets/styles/case.scss'
 
 const FormItem = Form.Item;
 const Option = Select.Option;

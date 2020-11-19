@@ -7,7 +7,7 @@ import {createStore} from 'redux'
 import {Provider,connect} from 'react-redux'
 import store from '../../redux/store'
 import { LogoutOutlined, SmileOutlined, FastBackwardOutlined, AreaChartOutlined,UserOutlined } from '@ant-design/icons';
-require('../../styles/head.scss')
+require('assets/styles/head.scss')
 class HeadComponent extends Component {
     constructor(props){
       super(props);
@@ -33,6 +33,7 @@ class HeadComponent extends Component {
       axios.post("/user/logout",{}).then((res) =>{
         if(res.data.code === 0){
             localStorage.removeItem('username');
+            localStorage.removeItem('token');
             this.props.history.push("/login");
         }else{
             // message.error('系统异常')

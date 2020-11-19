@@ -1,3 +1,4 @@
+
 body,
 div,
 span,
@@ -34,27 +35,18 @@ figcaption,
     list-style: none;
     font-style: normal;
     text-decoration: none;
+    // border: none;
     font-weight: normal;
     font-family: "Microsoft Yahei";
     box-sizing: border-box;
+    // -webkit-tap-highlight-color: transparent;
+    // -webkit-font-smoothing: antialiased;
+    // &:hover {
+    //     outline: none;
+    // }
 }
 h5 {
     font-size: 16px
-}
-
-#app {
-  width:100%;
-  height:100%;
-  background: #fff;
-  color: #2c3e50;
-  font-family: "Microsoft YaHei" ! important;
-}
-.appWrap {
-  width:100%;
-  height:100%;
-}
-.home-icon {
-  font-size: 48px;
 }
 
 $client-head-bg-color:#212121;
@@ -62,7 +54,6 @@ $client-aside-and-foot-bg-color:#3D3D3D;
 .content-body {
     padding: 0 10px;
     font-size:14px;
-    overflow: hidden;
     .bd-title {
         height: 30px;
         line-height: 30px;
@@ -204,6 +195,7 @@ $client-aside-and-foot-bg-color:#3D3D3D;
 }
 
 .dialog_submit {
+    width:80%;
     text-align: right;
     margin: 20px auto 0;
 }
@@ -268,7 +260,7 @@ $client-aside-and-foot-bg-color:#3D3D3D;
 //     transition: border-color .2s cubic-bezier(.645,.045,.355,1);
 //     width: 100%;
 // }
-// 搜索框背景颜色 -- liulinqiang
+// 搜索框背景颜色
 .el-input-group__append,
 .el-input-group__prepend {
     background-color: #fff;
@@ -277,14 +269,11 @@ $client-aside-and-foot-bg-color:#3D3D3D;
     }
 }
 
-// 搜索条件样式 --by魏小雅
+// 搜索条件样式
 .condition-form {
     .el-form-item__label {
         padding: 0 3px;
         font-size: 12px;
-    }
-    .ant-form-item {
-      margin-bottom: 0;
     }
     .fixed-width {
         width: 20%;
@@ -299,7 +288,6 @@ $client-aside-and-foot-bg-color:#3D3D3D;
     // }
     .line {
         text-align: center;
-        line-height: 36px;
     }
     .el-date-editor--daterange.el-input__inner,
     .el-date-editor--datetimerange.el-input__inner {
@@ -312,10 +300,6 @@ $client-aside-and-foot-bg-color:#3D3D3D;
         float: right;
         text-align: right;
         margin-bottom: 20px;
-        line-height: 39px;
-        .ant-btn+.ant-btn {
-            margin-left:10px;
-        }
     }
     .el-form-item--mini .el-form-item {
         margin-bottom: 0px;
@@ -348,7 +332,7 @@ $client-aside-and-foot-bg-color:#3D3D3D;
     }
 }
 
-// 表格样式  --by魏小雅
+// 表格样式
 // 表头样式 背景颜色，字体12px
 .el-table th {
     background-color: #F9F9F9;
@@ -365,14 +349,12 @@ $client-aside-and-foot-bg-color:#3D3D3D;
 .el-table td {
     padding: 8px 0;
 }
-.collection_record tr .cell {
-    height: 37px;
-    line-height: 37px;
-}
+
 .el-table .cell {
     line-height: normal;
 }
-// 文件上传组件样式 -by魏小雅
+
+// 文件上传组件样式
 .el-upload-list {
     display: none;
     padding-left: 230px;
@@ -404,11 +386,9 @@ $client-aside-and-foot-bg-color:#3D3D3D;
     }
 }
 
-// 上传结果展示----不要padding改为居中-gaoliqing
+// 上传结果展示
 .result-upload {
-    display:block;
-    text-align:center;
-    // padding-left: 230px;
+    padding-left: 230px;
     font-size: 12px;
     line-height: 1;
 }
@@ -440,7 +420,7 @@ $client-aside-and-foot-bg-color:#3D3D3D;
     }
 }
 
-// 批量上传按钮样式 -- liulinqiang
+// 批量上传按钮样式
 .upload {
     width: 98px;
     text-align: center;
@@ -494,7 +474,7 @@ $client-aside-and-foot-bg-color:#3D3D3D;
     // 借款人标签
     .borrower-tags {
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 90px;
     }
 }
@@ -532,7 +512,7 @@ $client-aside-and-foot-bg-color:#3D3D3D;
     background-color: #fff;
 }
 
-// 原生文件上传样式--by liulinqiang
+// 原生文件上传样式
 .a-upload {
     padding: 0px 10px;
     margin: 5px 0 0 0;
@@ -583,7 +563,7 @@ $client-aside-and-foot-bg-color:#3D3D3D;
     &:hover {}
 }
 
-// 菜单图标样式 by魏小雅
+// 菜单图标样式
 .aside-icon {
     font-size: 18px;
 }
@@ -634,19 +614,19 @@ $client-aside-and-foot-bg-color:#3D3D3D;
 }
 
 .repayTension {
-    // margin: 0 0 22px 0;
-    // .el-form-item__label {
-    //     width: 80px;
-    //     display: block;
-    //     float: left !important;
-    // }
-    // .el-form-item__content {
-    //     display: block;
-    //     height: auto;
-    // }
-    // .el-checkbox-group {
-    //     margin-left: 80px;
-    // }
+    margin: 0 0 22px 0;
+    .el-form-item__label {
+        width: 80px;
+        display: block;
+        float: left !important;
+    }
+    .el-form-item__content {
+        display: block;
+        height: auto;
+    }
+    .el-checkbox-group {
+        margin-left: 80px;
+    }
 }
 
 .personRadioBtn .el-radio-button__inner {
@@ -710,14 +690,7 @@ $client-aside-and-foot-bg-color:#3D3D3D;
         margin-top:-2px;
         .el-input .el-input__inner {
             font-size: 12px;
-            height:28px;
-            line-height: 28px;
         }
-    }
-    .el-select {
-      .el-input__icon {
-        line-height:28px;
-      }
     }
 }
 // 案件详情统计样式
@@ -761,41 +734,6 @@ $client-aside-and-foot-bg-color:#3D3D3D;
       bottom: -11px
     }
 }
-
-.fixed-area {
-  .el-checkbox-button--mini .el-checkbox-button__inner,.el-radio-button--mini .el-radio-button__inner {
-    padding: 7px 10px !important;
-  }
-}
-// 申请减免 
-.apply_derate .el-form-item__label {
-    padding: 0;
-}
-// 下拉框多选不换行
-.el-select__tags{
-    white-space: nowrap;
-}
-
-// react model 宽度
-.ant-modal-body {
-    width: 85%;
-    margin: 0 auto;
-}
-.ant-modal-header {
-    font-size: 20px;
-    text-align: center;
-    color: #343434;
-    background: #eaedf2;
-    border-radius: 15px 15px 0 0
-} 
-
-.hd-right { 
-    font-size: 14px;
-    cursor: pointer;
-    color: #fffc6c;
-    .anticon-logout {
-        font-size: 16px;
-        color:#fffc6c;
-        margin: 16px 0;
-    }
+.loginBg {
+  background: image('../images/bg.png')
 }
